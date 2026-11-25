@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Calu – Marcare numerar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <header>
+            <div class="logo">🔥</div>
+
+            <div class="header-text">
+                <h1>RotiserieGrill La Calu' Drăgănești</h1>
+                <p>Calculator marcare numerar</p>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="calculator">
+
+                <label for="amount">
+                    Introdu suma dorită
+                </label>
+
+                <div class="input-wrapper">
+
+                    <input
+                        type="number"
+                        id="amount"
+                        placeholder="Ex: 172"
+                        min="1"
+                        step="1"
+                        inputmode="numeric"
+                    >
+
+                    <span>LEI</span>
+
+                </div>
+
+                <div class="mode-buttons">
+
+                    <button class="mode-button active"
+                            data-mode="food">
+                        🍗 Mâncare
+                    </button>
+
+                    <button class="mode-button"
+                            data-mode="drinks">
+                        🥤 Băuturi
+                    </button>
+
+                    <button class="mode-button"
+                            data-mode="combined">
+                       Mâncare + băuturi  🍗🥤 
+                    </button>
+
+                </div>
+
+            </section>
+
+            <section id="results" class="results hidden">
+
+                <div class="results-header">
+
+                    <h2>Variante de bon</h2>
+
+                    <span id="count">0</span>
+
+                </div>
+
+                <div id="message"></div>
+
+                <div id="combinations"></div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            LA CALU · GRILL & ROTISSERIE
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
